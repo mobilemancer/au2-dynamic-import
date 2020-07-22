@@ -1,0 +1,69 @@
+{
+  "name": "au2-dynamic-import2",
+  "description": "An Aurelia 2 client application.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "???"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "aurelia": "dev"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "@aurelia/testing": "dev",
+    "htmlhint": "^0.13.0",
+    "@aurelia/plugin-gulp": "dev",
+    "gulp": "^4.0.2",
+    "gulp-dumber": "^1.0.3",
+    "gulp-typescript": "^5.0.1",
+    "gulp-plumber": "^1.2.1",
+    "merge2": "^1.3.0",
+    "gulp-terser": "^1.2.0",
+    "gulp-if": "^3.0.0",
+    "del": "^5.1.0",
+    "connect": "^3.7.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "connect-injector": "^0.4.4",
+    "serve-static": "^1.14.1",
+    "socket.io": "^2.3.0",
+    "open": "^7.0.4",
+    "cross-env": "^7.0.2",
+    "gulp-postcss": "^8.0.0",
+    "autoprefixer": "^9.8.0",
+    "postcss-url": "^8.0.0",
+    "@types/node": "^14.0.4",
+    "typescript": "^3.9.3",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "jest": "^26.0.1",
+    "jest-transform-stub": "^2.0.0",
+    "@types/jest": "^25.2.3",
+    "@aurelia/ts-jest": "dev"
+  },
+  "scripts": {
+    "lint:js": "eslint src test --ext .js,.ts",
+    "lint:html": "htmlhint -c .htmlhintrc src",
+    "lint": "npm run lint:js && npm run lint:html",
+    "pretest": "npm run lint",
+    "start": "gulp",
+    "build": "gulp clean && cross-env NODE_ENV=production gulp build",
+    "clear-cache": "gulp clear-cache",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "\\.(css|less|sass|scss|styl|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
+      "\\.(ts|html)$": "@aurelia/ts-jest"
+    },
+    "setupFiles": [
+      "<rootDir>/test/setup.ts"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/**/*.d.ts"
+    ]
+  }
+}

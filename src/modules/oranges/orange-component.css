@@ -1,0 +1,18 @@
+.margin {
+  margin: 60px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.big-text {
+  font-size: 124px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background: -webkit-linear-gradient(rgb(255, 212, 132), darkorange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

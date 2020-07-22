@@ -1,0 +1,12 @@
+<import from="./welcome"></import>
+<import from="./about.html"></import>
+<import from="./missing"></import>
+
+<nav>
+  <a goto="welcome">Welcome</a>
+  <a goto="about">About</a>
+  <a click.delegate="navigateTo('banana')">🍌</a>
+  <a goto="peach">🍑</a>
+</nav>
+
+<au-viewport default="welcome" fallback="missing"></au-viewport>
