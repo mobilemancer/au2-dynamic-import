@@ -1,0 +1,23 @@
+.medium-text {
+  padding: 10px;
+  font-size: 86px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background: -webkit-linear-gradient(rgb(235, 140, 211), rgb(111, 0, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.big-text-purple {
+  padding: 10px;
+  font-size: 174px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background: -webkit-linear-gradient(rgb(250, 147, 228), rgb(98, 0, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

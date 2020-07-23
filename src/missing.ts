@@ -16,6 +16,10 @@ export class Missing {
       this.router.goto("banana");
     }
 
+    if (parameters.id === "peach" || parameters.id === "%F0%9F%8D%91") {
+      this.router.goto("peach-top");
+    }
+
     this.missingComponent = parameters.id;
   }
 }
